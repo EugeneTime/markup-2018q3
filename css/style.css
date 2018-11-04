@@ -1,6 +1,7 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 1600px;
 
     font-family: "Lato", Arial, sans-serif;
     font-size: 16px;
@@ -80,19 +81,70 @@ a {
     color: #a2a2a2;
 }
 
+.domain-tariffs {
+    width: 888px;
+    border: 1px solid #d9d9d9;
+    margin: 30px auto;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.domain-tariffs__row {
+    display: flex;
+}
+  
+.domain-tariffs__cell {
+    width: 25%;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+}
+  
+.domain-tariffs__cell:before {
+    content: '';
+    width: 1px;
+    height: 90%;
+    background: #d9d9d9;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+  
+.domain-tariffs__cell:first-child:before {
+    display: none;
+}
+  
+.domain-tariffs__cell:after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  .domain-tariffs__cell:first-child {
+    text-transform: uppercase;
+}
+  
+.domain-tariffs__row:last-child .domain-tariffs__cell:after {
+    display: none;
+}
+
 .domain__select,
 .domain__label,
 .domain-tariffs {
     color: #cbcbcb;
 }
 
-.domain-tariffs__cell {
-    font-size: 14px;
-}
 
-.domain-tariffs__cell:first-child {
-    text-transform: uppercase;
-}
 
 /* Packages 
 ========================================================================== */
