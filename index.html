@@ -9,11 +9,11 @@
     </head>
     <body>
         <header class="main-header">
-           <nav class="main-menu">
-                <a class="main-header-logo">
+           <nav class="main-nav">
+                <a class="main-nav__logo">
                     <img src="img/logo.png" width="133" height="29" alt="Ghost Host logo">
                 </a>
-                <ul class="site-menu">
+                <ul class="main-nav__menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Domain</a></li>
                     <li><a href="#">Hosting</a></li>
@@ -23,291 +23,309 @@
                 </ul>
             </nav>
             <section class="promo">
-                <h2>Hello!</h2>
-                <p class="promo-text">We love our work...<br>
+                <h2 class="promo__heading">Hello!</h2>
+                <p class="promo__text">We love our work...<br>
                 And We're talking it seriously...</p>
             </section>
-            <nav class="member-menu">
-                <ul class="user-menu">
-                    <li><a class="login-link" href="#">Login</a></li>
-                    <li><a class="register-link" href="#">Register</a></li>
+            <nav class="user-nav">
+                <ul class="user-nav__list">
+                    <li><a class="user-nav__link-left" href="#">Login</a></li>
+                    <li><a class="user-nav__link-right" href="#">Register</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container">
             <h1 class="visually-hidden">Ghost Host</h1>
             <section class="domain">
-                <h2>Would you like to buy a new domain ?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
-                <form action="№" method="post">
-                    <label class="domain-item">www.
+                <h2 class="domain__heading">Would you like to buy a new domain ?</h2>
+                <p class="domain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
+                <form class="domain-form" action="№" method="post">
+                    <label class="domain__label">www.
                         <input type="text" name="search" placeholder="What do you want?">
                     </label>
-                    <select name="domain">
+                    <select class="domain__select" name="domain">
                         <option value="com">com.</option>
                         <option value="net">net.</option>
                     </select> 
                 </form> 
                 <table class="domain-tariffs">
-                    <tr class="tariff-row">
-                        <th class="tariff-cell" scope="row">.com</th>
-                        <td class="tariff-cell">1 Year</td>
-                        <td class="tariff-cell">$9.00 USD</td>
-                        <td class="tariff-cell">Transfer Price No</td>
+                    <tr class="domain-tariffs__row">
+                        <th class="domain-tariffs__cell" scope="row">.com</th>
+                        <td class="domain-tariffs__cell">1 Year</td>
+                        <td class="domain-tariffs__cell">$9.00 USD</td>
+                        <td class="domain-tariffs__cell">Transfer Price No</td>
                     </tr>
-                    <tr class="tariff-row">
-                        <th class="tariff-cell" scope="row">.net</th>
-                        <td class="tariff-cell">1 Year</td>
-                        <td class="tariff-cell">$9.00 USD</td>
-                        <td class="tariff-cell">Transfer Price No</td>
+                    <tr class="domain-tariffs__row">
+                        <th class="domain-tariffs__cell" scope="row">.net</th>
+                        <td class="domain-tariffs__cell">1 Year</td>
+                        <td class="domain-tariffs__cell">$9.00 USD</td>
+                        <td class="domain-tariffs__cell">Transfer Price No</td>
                     </tr>
                 </table>
             </section>
             <section class="packages">
                 <h2 class="visually-hidden">Packages</h2>
                 <section class="package-basic">
-                    <h3 class="package-heading">Basic Package</h3>
-                    <figure>
+                    <h3 class="package__heading">Basic Package</h3>
+                    <figure class="package-ver">
                         <img src="img/package_basic.png" width="61" height="55" alt="Basic Package">
-                        <figcaption class="package-features">
-                            <ol class="package-list">
-                                <li>
-                                    <span>Disk Space (GB)</span>
-                                    <span>50</span>
+                        <figcaption class="package-ver__features">
+                            <ol class="package-ver__list">
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Disk Space (GB)</span>
+                                    <span class="package-ver__item-value yellow">50</span>
                                 </li>
-                                <li>
-                                    <span>Subdomains</span>
-                                    <span>50</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Subdomains</span>
+                                    <span class="package-ver__item-value yellow">50</span>
                                 </li>
-                                <li>
-                                    <span>Transfer (GB)</span>
-                                    <span>50</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Transfer (GB)</span>
+                                    <span class="package-ver__item-value yellow">50</span>
                                 </li>
-                                <li>
-                                    <span>Data bases</span>
-                                    <span>1</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Data bases</span>
+                                    <span class="package-ver__item-value yellow">1</span>
                                 </li>
-                                <li>
-                                    <span>Dashboards</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Dashboards</span>
                                 </li>
-                                <li>
-                                    <span>Control Panel & FTP</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Control Panel & FTP</span>
                                 </li>
-                                <li>
-                                    <span>Free Support</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Free Support</span>
                                 </li>
                             </ol>
-                            <section class="package-price">
-                                <h3>
+                            <section class="package-ver__price">
+                                <h3 class="package-ver__price-heading">
                                     <sup>$</sup>
                                     <b>15</b>
                                     <sub>/Mo</sub>
                                 </h3>
                                 <hr>
-                                <a href="#">Select plan</a>
+                                <a class="package-ver__price-select" href="#">Select plan</a>
                             </section>
                         </figcaption>
                     </figure>
                 </section>
                 <section class="package-normal">
-                    <h3 class="package-heading">Normal Package</h3>
-                    <figure>
+                    <h3 class="package__heading">Normal Package</h3>
+                    <figure class="package-ver">
                         <img src="img/package_normal.png" width="55" height="55" alt="Normal Package">
-                        <figcaption class="package-features">
-                            <ol class="package-list">
-                                <li>
-                                    <span>Disk Space (GB)</span>
-                                    <span>100</span>
+                        <figcaption class="package-ver__features">
+                            <ol class="package-ver__list">
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Disk Space (GB)</span>
+                                    <span class="package-ver__item-value gray">100</span>
                                 </li>
-                                <li>
-                                    <span>Subdomains</span>
-                                    <span>100</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Subdomains</span>
+                                    <span class="package-ver__item-value gray">100</span>
                                 </li>
-                                <li>
-                                    <span>Transfer (GB)</span>
-                                    <span>100</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Transfer (GB)</span>
+                                    <span class="package-ver__item-value gray">100</span>
                                 </li>
-                                <li>
-                                    <span>Data bases</span>
-                                    <span>2</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Data bases</span>
+                                    <span class="package-ver__item-value gray">2</span>
                                 </li>
-                                <li>
-                                    <span>Dashboards</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Dashboards</span>
                                 </li>
-                                <li>
-                                    <span>Control Panel & FTP</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Control Panel & FTP</span>
                                 </li>
-                                <li>
-                                    <span>Free Support</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Free Support</span>
                                 </li>
                             </ol>
-                            <section class="package-price">
-                                <h3>
+                            <section class="package-ver__price">
+                                <h3 class="package-ver__price-heading">
                                     <sup>$</sup>
                                     <b>30</b>
                                     <sub>/Mo</sub>
                                 </h3>
                                 <hr>
-                                <a href="#">Select plan</a>
+                                <a class="package-ver__price-select" href="#">Select plan</a>
                             </section>
                         </figcaption>
                     </figure>
                 </section>
                 <section class="package-big">
-                    <h3 class="package-heading">Big Package</h3>
-                    <figure>
+                    <h3 class="package__heading">Big Package</h3>
+                    <figure class="package-ver">
                         <img src="img/package_big.png" width="55" height="55" alt="Big Package">
-                        <figcaption class="package-features">
-                            <ol class="package-list">
-                                <li>
-                                    <span>Disk Space (GB)</span>
-                                    <span>150</span>
+                        <figcaption class="package-ver__features">
+                            <ol class="package-ver__list">
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Disk Space (GB)</span>
+                                    <span class="package-ver__item-value red">150</span>
                                 </li>
-                                <li>
-                                    <span>Subdomains</span>
-                                    <span>150</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Subdomains</span>
+                                    <span class="package-ver__item-value red">150</span>
                                 </li>
-                                <li>
-                                    <span>Transfer (GB)</span>
-                                    <span>150</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Transfer (GB)</span>
+                                    <span class="package-ver__item-value red">150</span>
                                 </li>
-                                <li>
-                                    <span>Data bases</span>
-                                    <span>4</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Data bases</span>
+                                    <span class="package-ver__item-value red">4</span>
                                 </li>
-                                <li>
-                                    <span>Dashboards</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Dashboards</span>
                                 </li>
-                                <li>
-                                    <span>Control Panel & FTP</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Control Panel & FTP</span>
                                 </li>
-                                <li>
-                                    <span>Free Support</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Free Support</span>
                                 </li>
                             </ol>
-                            <section class="package-price">
-                                <h3>
+                            <section class="package-ver__price">
+                                <h3 class="package-ver__price-heading">
                                     <sup>$</sup>
                                     <b>40</b>
                                     <sub>/Mo</sub>
                                 </h3>
                                 <hr>
-                                <a href="#">Select plan</a>
+                                <a class="package-ver__price-select" href="#">Select plan</a>
                             </section>
                         </figcaption>
                     </figure>
                 </section>
                 <section class="package-biggest">
-                    <h3 class="package-heading">Biggest Package</h3>
-                    <figure>
+                    <h3 class="package__heading">Biggest Package</h3>
+                    <figure class="package-ver">
                         <img src="img/package_biggest.png" width="55" height="55" alt="Biggest Package">
-                        <figcaption class="package-features">
-                            <ol class="package-list">
-                                <li>
-                                    <span>Disk Space (GB)</span>
-                                    <span>250</span>
+                        <figcaption class="package-ver__features">
+                            <ol class="package-ver__list">
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Disk Space (GB)</span>
+                                    <span class="package-ver__item-value green">250</span>
                                 </li>
-                                <li>
-                                    <span>Subdomains</span>
-                                    <span>250</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Subdomains</span>
+                                    <span class="package-ver__item-value green">250</span>
                                 </li>
-                                <li>
-                                    <span>Transfer (GB)</span>
-                                    <span>250</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Transfer (GB)</span>
+                                    <span class="package-ver__item-value green">250</span>
                                 </li>
-                                <li>
-                                    <span>Data bases</span>
-                                    <span>6</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Data bases</span>
+                                    <span class="package-ver__item-value green">6</span>
                                 </li>
-                                <li>
-                                    <span>Dashboards</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Dashboards</span>
                                 </li>
-                                <li>
-                                    <span>Control Panel & FTP</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Control Panel & FTP</span>
                                 </li>
-                                <li>
-                                    <span>Free Support</span>
+                                <li class="package-ver__item">
+                                    <span class="package-ver__item-option">Free Support</span>
                                 </li>
                             </ol>
-                            <section class="package-price">
-                                <h3>
+                            <section class="package-ver__price">
+                                <h3 class="package-ver__price-heading">
                                     <sup>$</sup>
                                     <b>70</b>
                                     <sub>/Mo</sub>
                                 </h3>
                                 <hr>
-                                <a href="#">Select plan</a>
+                                <a class="package-ver__price-select" href="#">Select plan</a>
                             </section>
                         </figcaption>
                     </figure>
                 </section>
             </section>
             <section class="about">
-                <div class="about-us">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa.Mauris at augue libero. Fusce posuere, sapien nec poır.Uaee augsuada sed mauris in tincidunt.</p>
+                <div class="about__us">
+                    <h2 class="about__us-heading">About Us</h2>
+                    <p class="about__us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa.Mauris at augue libero. Fusce posuere, sapien nec poır.Uaee augsuada sed mauris in tincidunt.</p>
                 </div>
-                <dl class="about-team">
+                <dl class="about__team">
                     <dt class="about-team-single">
-                        <img src="img/about_photo01.jpg" width="95" height="95" alt="Jonny Doe">
-                        <b>Jonny Doe</b>
+                        <img class="about__team-foto" src="img/about_photo01.jpg" width="95" height="95" alt="Jonny Doe">
+                        <b class="about__team-name">Jonny Doe</b>
                     </dt>
                     <dd>
-                        <span>Designer</span>
+                        <span class="about__team-position">Designer</span>
                         <ul>
-                            <li><a class="team-facebook" href="#" aria-label="facebook"></a></li>
-                            <li><a class="team-twitter" href="#" aria-label="twitter"></a></li>
-                            <li><a class="team-link" href="#" aria-label="link"></a></li>
+                            <li class="about__team-item">
+                                <a class="about__team-facebook" href="#" aria-label="facebook"></a>
+                            </li>
+                            <li class="about__team-item">
+                                <a class="about__team-twitter" href="#" aria-label="twitter"></a>
+                            </li>
+                            <li class="about__team-item">
+                                <a class="about__team-web-site" href="#" aria-label="web-site"></a>
+                            </li>
                         </ul>
                     </dd>
                 </dl>
-                <dl class="about-team">
-                    <dt class="about-team-single">
-                        <img src="img/about_photo02.jpg" width="95" height="95" alt="Jonny Doe">
-                        <b>Jonny Doe</b>
+                <dl class="about__team">
+                    <dt class="about__team-single">
+                        <img class="about__team-foto" src="img/about_photo02.jpg" width="95" height="95" alt="Jonny Doe">
+                        <b class="about__team-name">Jonny Doe</b>
                     </dt>
                     <dd>
-                        <span>Designer</span>
+                        <span class="about__team-position">Designer</span>
                         <ul>
-                            <li><a class="team-facebook" href="#" aria-label="facebook"></a></li>
-                            <li><a class="team-twitter" href="#" aria-label="twitter"></a></li>
-                            <li><a class="team-link" href="#" aria-label="link"></a></li>
+                            <li class="about__team-item">
+                                <a class="about__team-facebook" href="#" aria-label="facebook"></a>
+                            </li>
+                            <li class="about__team-item">
+                                <a class="about__team-twitter" href="#" aria-label="twitter"></a>
+                            </li>
+                            <li class="about__team-item">
+                                <a class="about__team-web-site" href="#" aria-label="web-site"></a>
+                            </li>
                         </ul>
                     </dd>
                 </dl>
-                <dl class="about-team">
+                <dl class="about__team">
                     <dt class="about-team-single">
-                        <img src="img/about_photo03.jpg" width="95" height="95" alt="Jonny Doe">
-                        <b>Jonny Doe</b>
+                        <img class="about__team-foto" src="img/about_photo03.jpg" width="95" height="95" alt="Jonny Doe">
+                        <b class="about__team-name">Jonny Doe</b>
                     </dt>
                     <dd>
-                        <span>Designer</span>
+                        <span class="about__team-position">Designer</span>
                         <ul>
-                            <li><a class="team-facebook" href="#" aria-label="facebook"></a></li>
-                            <li><a class="team-twitter" href="#" aria-label="twitter"></a></li>
-                            <li><a class="team-link" href="#" aria-label="link"></a></li>
+                            <li class="about__team-item">
+                                <a class="about__team-facebook" href="#" aria-label="facebook"></a>
+                            </li>
+                            <li class="about__team-item">
+                                <a class="about__team-twitter" href="#" aria-label="twitter"></a>
+                            </li>
+                            <li class="about__team-item">
+                                <a class="about__team-web-site" href="#" aria-label="web-site"></a>
+                            </li>
                         </ul>
                     </dd>
                 </dl>
             </section>
             <section class="comments">
                 <h2 class="visually-hidden">Comments</h2>
-                <blockquote>
+                <blockquote class="comments__quote">
                     <q>Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.</q>
-                    <cite>John Doe</cite>
-                    <ol class="about-quotes">
-                        <li class="quote-radio">
-                            <button class="quote-btn">
+                    <cite class="comments__author">John Doe</cite>
+                    <ol class="comments__quote-list">
+                        <li class="comments__quote-radio">
+                            <button class="comments__quote-btn">
                                 Quote one
                             </button>
                         </li>
-                        <li class="quote-radio">
-                            <button class="quote-btn">
+                        <li class="comments__quote-radio">
+                            <button class="comments__quote-btn">
                                 Quote two
                             </button>
                         </li>
-                        <li class="quote-radio">
-                            <button class="quote-btn">
+                        <li class="comments__quote-radio">
+                            <button class="comments__quote-btn">
                                 Quote three
                             </button>
                         </li>
@@ -316,40 +334,40 @@
             </section>
             <section class="functions">
                 <h2 class="visually-hidden">Functions</h2>
-                <dl class="function-items">
-                    <dt class="function-item-fast">
-                        <h3>Fast Servers</h3>
+                <dl class="function__items">
+                    <dt class="function__item-fast">
+                        <h3 class="function__item-heading">Fast Servers</h3>
                     </dt>
                     <dd>
-                        <p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                        <p class="function__item-text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                     </dd>
-                    <dt class="function-item-cloud">
-                        <h3>Cloud Servers</h3>
+                    <dt class="function__item-cloud">
+                        <h3 class="function__item-heading">Cloud Servers</h3>
                     </dt>
                     <dd>
-                        <p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                        <p class="function__item-text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                     </dd>
-                    <dt class="function-item-domain">
-                        <h3>Domain Transfer</h3>
+                    <dt class="function__item-domain">
+                        <h3 class="function__item-heading">Domain Transfer</h3>
                     </dt>
                     <dd>
-                        <p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                        <p class="function__item-text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                     </dd>
-                    <dt class="function-item-live">
-                        <h3>Live Support</h3>
+                    <dt class="function__item-live">
+                        <h3 class="function__item-heading">Live Support</h3>
                     </dt>
                     <dd>
-                        <p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                        <p class="function__item-text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                     </dd>
                 </dl>
             </section>
         </main>
         <footer class="main-footer">
-            <nav class="main-menu">
-                <a class="footer-logo">
+            <nav class="main-nav">
+                <a class="main-nav__footer-logo">
                     <img src="img/logo.png" width="133" height="29" alt="Ghost Host logo">
                 </a>
-                <ul class="site-menu">
+                <ul class="main-nav__menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Hosting</a></li>
                     <li><a href="#">Clients</a></li>
@@ -359,24 +377,24 @@
             </nav>
             <div class="footer-bottom">
                 <h2 class="visually-hidden">Additional Information</h2>
-                <div class="footer-copyright">
+                <div class="footer-bottom__copyright">
                     <p>Lorem ipsum dolor sit amet, consecteteeseurı adipiscing elit. Donec mollis commodoeesene que, non commodo risus volutpat vel.</p>
                     <p>Design by 
                         <a href="#" target="_blank">XpeedStudio</a>
                     </p>
                 </div>
-                <nav class="footer-menu">
-                    <ul class="footer-menu-left">
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Product Catalog</a></li>
-                        <li><a href="#">Shortcodes</a></li>
+                <nav class="footer-bottom__nav">
+                    <ul class="footer-bottom__nav-menu">
+                        <li class="footer-bottom__nav-item"><a href="#">Support</a></li>
+                        <li class="footer-bottom__nav-item"><a href="#">Account</a></li>
+                        <li class="footer-bottom__nav-item"><a href="#">Product Catalog</a></li>
+                        <li class="footer-bottom__nav-item"><a href="#">Shortcodes</a></li>
                     </ul>
-                    <ul class="footer-menu-right">
-                        <li><a href="#">Site Map</a></li>
-                        <li><a href="#">Whois Search</a></li>
-                        <li><a href="#">Web Mail</a></li>
-                        <li><a href="#">Find Domain</a></li>
+                    <ul class="footer-bottom__nav-menu">
+                        <li class="footer-bottom__nav-item"><a href="#">Site Map</a></li>
+                        <li class="footer-bottom__nav-item"><a href="#">Whois Search</a></li>
+                        <li class="footer-bottom__nav-item"><a href="#">Web Mail</a></li>
+                        <li class="footer-bottom__nav-item"><a href="#">Find Domain</a></li>
                     </ul>
                 </nav>
                 <ul class="vcard"> <!-- microformat hCard, url: http://microformats.org/wiki/hcard -->
