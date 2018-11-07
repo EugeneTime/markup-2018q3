@@ -1,7 +1,10 @@
+* { margin: 0; 
+    padding: 0; 
+}
+
 body {
     margin: 0 auto;
-    padding: 0;
-    width: 1600px;
+    min-width: 1600px;
 
     font-family: "Lato", Arial, sans-serif;
     font-size: 16px;
@@ -28,15 +31,60 @@ a {
 ========================================================================== */
 
 .main-header {
-    background: #000000 url("../img/backgroung_header.jpg") no-repeat;
+    
+}
+
+.container-preview {
+    min-height: 945px;
+    background-blend-mode: darken;
+    background: rgba(0,0,0,0.8) url("../img/backgroung_header.jpg") no-repeat;
     color: #ffffff;
 }
 
+.container-promo {
+    min-height: 856px;
+    display: flex;
+}
+
+.promo {
+    margin: auto;
+}
+
+.main-nav {
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #2F2E33;
+    min-height: 90px;
+}
+
+.main-nav__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .main-nav__menu {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    min-width: 634px;
     list-style: none;
     text-transform: uppercase;
 }
+
+.main-nav__item {
+    display: flex;
+}
+
+.main-nav__item a:link {
+    display: flex;
+    align-items: center;
+
+}   
+
+.main-nav__item a:hover {
+    border-bottom: 1px solid #fff;
+}    
 
 .promo__heading {
     text-align: center;
@@ -46,23 +94,41 @@ a {
 
 .promo__text {
     text-align: center;
-    font-family: Georgia, serif;
-    font-size: 32px;
-    font-style: italic;
+    font: italic 32px/47px Georgia, serif;
+}
+
+.user-nav {
+    min-height: 120px;
+
 }
 
 .user-nav__list {
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
     list-style: none;
     font-size: 22px;
     text-transform: uppercase;
 }
 
-.user-nav__link-left {
+.user-nav__item-left,
+.user-nav__item-right {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.user-nav__item-left {
     background-color: #21424a;
 }
 
-.user-nav__link-right {
+.user-nav__item-right {
     background-color: #2fac6c;
+}
+
+.user-nav__link {
+    display: flex;
+    align-items: center;
 }
 
 /* Domain 
@@ -70,10 +136,13 @@ a {
 
 .domain {
     text-align: center;
+    padding: 92px 0;
+    border-bottom: 1px solid transparent;
 }
 
 .domain__heading {
     font-size: 24px;
+    line-height: 50px;
     color: #383737;
 }
 
@@ -81,13 +150,59 @@ a {
     color: #a2a2a2;
 }
 
+.domain-form {
+    display: flex;
+    margin: 40px auto 0 auto;
+    width: 890px;
+    border: 1px solid #d9d9d9;
+}
+
+.domain__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 72px;
+    border-right: 1px solid #d9d9d9;
+}
+
+.domain__input {
+    display: flex;
+    min-width: 714px;
+    min-height: 45px;
+    padding-left: 15px;
+    border: none;
+    color: #868686;
+    font: inherit;
+}
+
+.domain__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 88px;
+    min-height: 50px;
+    padding: 0 15px;
+    border-right: 1px solid #fff; /* for Opera */
+    border-top: 1px solid #fff; /* for Opera */
+    border-bottom: 1px solid #fff; /* for Opera */
+    border-left: 1px solid #d9d9d9; /* for Opera */
+}
+
+.domain__option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #d9d9d9;
+}
+
 .domain-tariffs {
-    width: 888px;
+    width: 890px;
+    height: 195px;
     border: 1px solid #d9d9d9;
     margin: 30px auto;
-    padding: 15px 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
   
 .domain-tariffs__row {
@@ -150,12 +265,24 @@ a {
 ========================================================================== */
 
 .packages {
-    background: #ffffff url("../img/backgroung_packages.jpg") no-repeat;
+    padding: 100px 200px;
+    border-bottom: 1px solid transparent;
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.4) url("../img/backgroung_packages.jpg") no-repeat;
     color: #000000;
+    display: flex;
 }
 
 .packages a {
     color: #000000;
+}
+
+.package-ver {
+    background-color: #fff;
+    margin-right: 59px;
+    min-width: 257px;
+    min-height: 567px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .package-ver__heading {
@@ -204,6 +331,11 @@ a {
 /* About Us 
 ========================================================================== */
 
+.about {
+    padding: 110px 200px;
+    border-bottom: 1px solid transparent;
+}
+
 .about__us-heading {
     font-size: 36px;
 }
@@ -214,6 +346,7 @@ a {
 }
 
 .about__team {
+    display: flex;
     text-align: center;
 }
 
@@ -234,7 +367,10 @@ a {
 ========================================================================== */
 
 .comments {
-    background: #000000 url("../img/backgroung_comments.jpg") no-repeat;
+    padding: 50px 355px;
+    border-bottom: 1px solid transparent;
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.7) url("../img/backgroung_comments.jpg") no-repeat;
     color: #ffffff;
 }
 
@@ -247,12 +383,26 @@ a {
     font-weight: bold;
 }
 
+.comments__quote-list {
+    display: flex;
+    justify-content: center;
+}
+
 .comments__quote-radio {
     list-style: none;
 }
 
 /* Functions 
 ========================================================================== */
+
+.functions {
+    padding: 100px 200px;
+    border-bottom: 1px solid transparent;
+}
+
+.function__items {
+    display: flex;
+}
 
 .function__items {
     text-align: center;
@@ -270,6 +420,7 @@ a {
 ========================================================================== */
 
 .main-footer {
+    padding: 0 200px 50px;
     background-color: #2a2a2a;
 }
 
